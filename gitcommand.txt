@@ -1,0 +1,41 @@
+###gitのコマンドのメモ###
+
+
+
+#リポジトリの作成　：　(リポジトリにしたいディレクトリで) git init
+git init
+
+#リポジトリをリモートに登録　：　git remote add (リモート名) (リモートのURL)
+#(リモート名)は以降originとしている。
+git remote add origin 
+
+#リモートリポジトリの一覧　：　(ローカルリポジトリのディレクトリ内で)git remote -v
+git remote -v
+
+#ファイルの追加　：　git add (ファイル名)
+git add
+
+#コミット　：　git commit -m "メッセージ"
+git commit -m ""
+
+#プッシュ　：　git push origin ブランチ名
+git push origin 
+
+#プル　：　git pull
+git pull origin (ブランチ名)
+
+#add,commitしたものなどの現状確認　：　git status
+git status
+
+
+
+#ブランチの作成　：　git branch (ブランチ名)
+git branch 
+
+#ブランチ一覧を表示　：　git branch	
+git branch
+
+#ブランチを変更　：　git checkout (ブランチ名)
+git checkout 
+
+#

@@ -1,0 +1,42 @@
+/etc/apt/sources.listに以下を追加
+	deb http://ftp.jp.debian.org/debian/ sid main
+	deb-src http://ftp.jp.debian.org/debian/ sid main
+	※このファイルを変更したら、sudo apt updateしないとだめ
+	
+sudo apt install docker.io
+	これでDocker Engineをインストールした
+
+docker.hub にサインアップしました(windowsで)
+
+
+sudo curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-Linux-x86_64 -o /usr/local/bin/docker-compose
+	これでdocker-composeをインストール
+	
+
+sudo chmod +x /usr/local/bin/docker-compose
+	で実行権限を与えた。
+	
+sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
+	でsudo等で実行できなくなる可能性もあるため、ファイルを移動した。
+	
+sudo systemctl enable docker
+	でDockerを立ち上げた
+	
+~/containers/RailsContainer にいろいろファイル作って編集した
+	
+sudo docker-compose run web rails new . --force --database=mysql --skip-bundle
+
+sudo docker-compose build
+	これでDockerファイルの内容が実行され、一つ上のコマンドでいろいろ上書きされたGemfileの内容でGemの
+	インストールや作成されたsrc配下がコンテナへコピーされる。
+	※以降Gemを追加したい場合は
+		-Gemfile修正
+		-docker-compose build
+	　の繰り返しでできる。	
+	　
+	　
+sudo docker-compose up -d
+	　
+sudo docker-compose run web rails db:create
+
+
