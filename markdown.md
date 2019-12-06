@@ -87,7 +87,8 @@ write \>> to reference in the reference
 >引用スタート  
 >引用中  
 >>二重引用スタート  
->>二重引用終了  
+>>二重引用終了
+>引用中    
 >引用終了  
 ```
 
@@ -97,6 +98,7 @@ write \>> to reference in the reference
 >引用中  
 >>二重引用スタート  
 >>二重引用終了  
+>引用中  
 >引用終了  
 
 
@@ -125,4 +127,40 @@ ___
 ***
 ___
 * * *
+
+
+
+***
+
+
+
+## リンク(hyper link)
+surround with \[] : the string you want to attach a link  
+surround with \() : url you want to link
+```
+[Qiita](http://qiita.com/)
+[Yahoo!Japan](http://www.yahoo.co.jp/)
+```
+
+## 結果
+
+[Qiita](http://qiita.com/)
+[Yahoo!Japan](http://www.yahoo.co.jp/)
+
+
+
+***
+
+
+
+## 取り消し線(delete line)
+surrond with \-- what you want to put a delete line
+```
+--取り消し線--
+```
+
+## 結果
+
+--取り消し線--
+
 
