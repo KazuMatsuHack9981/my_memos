@@ -81,22 +81,23 @@ if you want to nest, indent and write children
 
 ## 引用(reference)
 putting \> at the beginning makes reference(citation)  
-write \>> to reference in the reference
+write \>> to reference in the reference  
+※need double space at each end
 ```
->引用スタート
->引用中
->>二重引用スタート
->>二重引用終了
->引用終了
+>引用スタート  
+>引用中  
+>>二重引用スタート  
+>>二重引用終了  
+>引用終了  
 ```
 
 ## 結果
 
->引用スタート
->引用中
->>二重引用スタート
->>二重引用終了
->引用終了
+>引用スタート  
+>引用中  
+>>二重引用スタート  
+>>二重引用終了  
+>引用終了  
 
 
 
