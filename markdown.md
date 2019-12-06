@@ -83,6 +83,7 @@ if you want to nest, indent and write children
 putting \> at the beginning makes reference(citation)  
 write \>> to reference in the reference  
 ※need double space at each end
+※need \> with のsentence is needed to end one reference nest
 ```
 >引用スタート  
 >引用中  
