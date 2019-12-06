@@ -1,9 +1,8 @@
 # MarkDown記法での書き方のメモ
-
-
-***
-
-
+  
+  
+  
+  
 ## 見出し(headings)
 ```
 # 見出し1
@@ -11,16 +10,20 @@
 ### 見出し3
 ...
 ```
-#### 結果
+## 結果
 # 見出し1
 ## 見出し2
 ### 見出し3
 ...
-
-
+  
+  
+  
+  
 ***
-
-
+  
+  
+  
+  
 ## テキスト修飾(text alignment)
 surrounding with \* or \_ makes the word *italic*
 surrounding with double makes the word **bold**
@@ -32,7 +35,11 @@ __太字__
 ```
 
 
+
+
 ***
+
+
 
 
 ## リスト(list)
