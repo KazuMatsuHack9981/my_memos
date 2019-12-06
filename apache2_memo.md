@@ -38,8 +38,11 @@ systemctl status apache2
 
 
 ## ファイルアクセス(file access)
-ブラウザにて、「http://192.168.111.128/」と入力  
-※Windowsの方のブラウザでもアクセス可能
+enter below in your browser
+```
+http://192.168.111.128/
+```
+※you can access here from Windows too
 
 
 
@@ -59,10 +62,10 @@ http://192.168.111.128/home
 
 
 ## 設定ファイル(settings file)
+index.html is the first file shows when accessed
 ```
 /var/www/html/
 ```
-このindex.htmlが最初に表示されるやつ。
 
 
 
@@ -71,12 +74,12 @@ http://192.168.111.128/home
 
 
 ## .bashrcに加えた関数(.bashrc functions)
-サーバーにファイルをプッシュ
+push the file to server
 ```
-apush ファイル名
+apush (filenames)
 ```
-.bashrc のaliasたちの下にfunctionとして定義してある。
-これを使えば、現在のディレクトリ問わずファイルを/var/www/html/home直下に送れる。
+this is defined in the .bashrc as a function
+using this, you can send files under /var/www/html/home from any directory
 
 
 
