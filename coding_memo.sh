@@ -21,6 +21,7 @@ list_all_commands() {
 	echo "ty"
 	echo "ruby"
 	echo "verilog"
+	echo "tas"
 }
 
 
@@ -40,5 +41,6 @@ case $1 in
 	ty        ) cat ~/desktop/memos/pic_and_tyls.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	ruby      ) cat ~/desktop/memos/ruby_command.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	verilog   ) cat ~/desktop/memos/verilog_memo.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
+	tas       ) cat ~/desktop/memos/tas_memo.md |  awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	*         ) echo -e "ERROR: wrong command!!!\ntype 'sc help' for more information";;
 esac
