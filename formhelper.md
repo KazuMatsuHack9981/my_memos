@@ -1,6 +1,27 @@
 # Form Helper (Ruby on Rails)
 
 
+
+
+## titles
+
+* create <form> tag  
+* input text field  
+* submit tag  
+* basic format  
+* checkbox  
+* label  
+* radio button  
+* select list (ordinary)  
+* select list (multiple)  
+
+
+
+
+***
+
+
+
 ## create <form> tag
 ```
 <%= form_tag(controller: "", action: "") do %>

@@ -2,6 +2,28 @@
 
 
 
+## titles
+
+* make local repository  
+* make remote repository  
+* list of remote repository  
+* add file  
+* commit  
+* push  
+* basic flow   
+* pull  
+* status of local repository  
+* make branch  
+* list of branch  
+* change branch  
+
+
+
+
+***
+
+
+
 ## make local repository
 in the directory where you want to make it the local repository,
 ```

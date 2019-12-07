@@ -1,6 +1,26 @@
 # linux command memo
 
 
+
+## titles
+
+* open files  
+* apt  
+* groups  
+* make users  
+* change the password  
+* add user to group  
+* show user status  
+* make common directory  
+* portscan  
+
+
+
+
+***
+
+
+
 ## open files
 open files by a defaut application
 ```

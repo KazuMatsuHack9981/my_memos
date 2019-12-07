@@ -1,5 +1,26 @@
 # MarkDown記法での書き方のメモ    
 
+
+
+
+## titles
+
+* headings  
+* text alignment  
+* list  
+* reference  
+* code block  
+* horizontal line  
+* hyper link  
+* delte line  
+
+
+
+
+***
+
+
+
 ## 見出し(headings)
 ```
 # 見出し1
@@ -169,4 +190,6 @@ surrond with \~~ what you want to put a delete line
 
 
 ***
+
+
 

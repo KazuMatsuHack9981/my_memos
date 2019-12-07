@@ -2,6 +2,32 @@
 
 
 
+
+## titles
+
+* list docker images  
+* get docker images  
+* run docker  
+* status of container  
+* stop container  
+* start container  
+* stop container  
+* delete docker image  
+* my own functions/alias  
+* dockerstats  
+* reset docker  
+* sudo docker rm -f $(sudo docker ps -a -q)  
+* sudo docker images -aq | xargs sudo docker rmi  
+* dockerbash  
+* docker-services  
+
+
+
+
+***
+
+
+
 ## list docker images
 show the list of docker images currently have  
 ```

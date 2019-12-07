@@ -1,5 +1,22 @@
 # About linux's keyboard shortcuts
 
+
+
+## titles
+
+* settings  
+* shortcuts  
+* Alt+Esc  
+* Windows+I  
+* Windows+Esc  
+
+
+
+
+***
+
+
+
 ## settings
 the way to change the keyboard binding of linux
 

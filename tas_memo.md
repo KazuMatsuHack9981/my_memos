@@ -2,6 +2,35 @@
 
 
 
+
+## titles
+
+* introduction  
+* execute assembler  
+* assembler grammer  
+* constant  
+* register  
+* memory operand  
+* label  
+* operator  
+* comment  
+* example code  
+* pseudo instruction  
+* MIPS instruction  
+* R type instruction  
+* I type instruction  
+	* arithmetic/logical instruction  
+	* branch instruction  
+	* memory access instruction  
+* J type instruction  
+
+
+
+
+***
+
+
+
 ## introduction
 tas is the assembler for the simulator of easy CPU used  
 in the class Computer Architecture A.  

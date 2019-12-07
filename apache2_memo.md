@@ -1,6 +1,24 @@
 # apache2の使い方
 
 
+
+## titles
+
+* activate  
+* stop  
+* check status  
+* file access  
+* file location  
+* settings file  
+* .bashrc functions  
+
+
+
+
+***
+
+
+
 ## apache2の起動(activate)
 start apache2 service by systemctl command
 ```
