@@ -5,6 +5,7 @@ list_all_commands() {
 	echo "USAGE  : sc \$1 \$2"
 	echo "          \$1 : filename (selections are listed below)"
 	echo "          \$2 : grep keyword"
+	echo "               assign 'titles' to get the titles list of files"
 	echo ""
 	echo "filename selections for \$1 is listed below"
 	echo "help"
