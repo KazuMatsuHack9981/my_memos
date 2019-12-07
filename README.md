@@ -74,8 +74,8 @@ here are the rules to make new markdown file.
 
 * write a title by `#` and subtitles by `##`  
 * make `## titles` and list headings of the file  
-* each `##` have to end with `***`  
-* put 3 new line in front and back of the `***`  
+* each `##` have to end with `\*\*\*`  
+* put 3 new line in front and back of the `\*\*\*`  
 * try writing description at the top of the commands  
 
 
