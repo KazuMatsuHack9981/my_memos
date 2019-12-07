@@ -32,7 +32,7 @@ case $1 in
 	docker    ) cat ~/desktop/memos/docker_about.txt ~/desktop/memos/docker_commands.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	gedit     ) cat ~/desktop/memos/gedit_settings_memo.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	formhelper) cat ~/desktop/memos/formhelper.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
-	git       ) cat ~/desktop/memos/gitcommand.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
+	git       ) cat ~/desktop/memos/gitcommand.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	keyboard  ) cat ~/desktop/memos/keyboard_shortcut.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	linux     ) cat ~/desktop/memos/linux_command_memo.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	lynx      ) cat ~/desktop/memos/lynx_memo.txt | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
