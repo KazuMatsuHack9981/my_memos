@@ -208,6 +208,9 @@ it is divided in the
 * branch instruction  
 * memmory access instruction  
 
+
+
+***
   
   
 
@@ -230,6 +233,10 @@ instructions:
 	
 	
 	
+***
+	
+	
+	
 ### branch instruction
 have 3 operands.  
 compare first and second operand and jump to the instruction addr  
@@ -249,7 +256,11 @@ ex)
 beq $t0, $t1, LABEL
 ```
 
+
   
+  
+***
+
   
   
 ### memmory access instruction
