@@ -6,7 +6,8 @@
 ## titles
 
 * introduction  
-* execute assembler  
+* assemble assembler file  
+* execute tmips .dat file  
 * assembler grammer  
 * constant  
 * register  
@@ -43,15 +44,28 @@ further applications will be introduce in the third grade class.
 
 
 
-## execute assembler
+## assemble assembler file
 name is the name of assembler tas's filename.  
 the file name's suffix is ".s"
 ```
 tas name
 ```
-  
 output file's suffix will be ".dat".  
-?
+
+
+
+***
+
+
+
+## execute tmips .dat file
+make sure ".dat" file is in the same directory of "testbench.v"  
+also make sure to **rename ".dat" file to "memfile.dat"**.  
+then type the command below to execute machine language program.  
+```
+iverilog -s testbench -o testbench *.v
+vvp testbench
+```
 
 
 
@@ -219,7 +233,7 @@ list of r type instructions are below.
 
 ex)
 ```
-add $t0, $t1 $t2   ===>   ($t0 <- $t1 + $t2)
+add $t0, $t1, $t2   ===>   ($t0 <- $t1 + $t2)
 ```
 
 
