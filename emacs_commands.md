@@ -1,11 +1,22 @@
-# About Emacs
+# Emacs Commands
 
 
 ## titles
 
-* copy and paste
-* 
-* 
+* cut (selected)  
+* cut (one word)  
+* cut (one line)  
+* cut (cursor to end)  
+* copy (selected)  
+* paste  
+* paste (kill-ring)  
+* undo  
+* on/off toggle line number  
+* save files  
+* quit command   
+* search word  
+* jump to arbitrary line  
+* close emacs  
 
 
 
