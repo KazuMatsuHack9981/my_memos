@@ -27,6 +27,7 @@ list_all_commands() {
 	echo "readme"
 	echo "emacs"
 	echo "nano"
+	echo "vim"
 }
 
 
@@ -52,5 +53,6 @@ case $1 in
 	readme     ) cat ~/desktop/memos/README.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	emacs      ) cat ~/desktop/memos/emacs_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	nano       ) cat ~/desktop/memos/nano_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
+	vim        ) cat ~/desktop/memos/vim_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	*          ) echo -e "ERROR: wrong command!!!\ntype 'sc help' for more information";;
 esac
