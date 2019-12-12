@@ -3,9 +3,17 @@
 
 ## titles
 
- * 
- * 
- * 
+ * cut  
+ * copy    
+ * paste  
+ * selection start/stop  
+ * undo  
+ * redo  
+ * move cursor to the next word  
+ * jump to arbitrary line number  
+ * save  
+ * paste all content of other files  
+ * close nano  
 
 
 
@@ -14,10 +22,14 @@
 
 
 
-## cut (one line)
+## cut
+if nothing is selected, command below   
+would cut the whole current line.
 ```
 Ctl-k
 ```
+if selected with mouse, this would cut   
+only the selected part.
 
 
 
@@ -25,10 +37,14 @@ Ctl-k
 
 
 
-## copy (one line)
+## copy
+if nothing is selected, command below   
+would copy the whole current line.
 ```
 Alt-^
 ```
+if selected with mouse, this would copy  
+only the selected part.
 
 
 
@@ -95,6 +111,17 @@ Alt-e
 ## move cursor to the next word
 ```
 Ctl-Space
+```
+
+
+
+***
+
+
+
+## jump to arbitrary line number
+```
+Ctl-_ [line number]
 ```
 
 
