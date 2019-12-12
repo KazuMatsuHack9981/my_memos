@@ -63,10 +63,6 @@ Ctl-u
 
 
 
-***
-
-
-
 ## selection start/stop
 start selection by pressing
 ```
