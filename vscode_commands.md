@@ -48,7 +48,7 @@ if nothing is selected, copy whole current line.
 
 
 
-# paste
+## paste
 ```
 Ctl-v
 ```
