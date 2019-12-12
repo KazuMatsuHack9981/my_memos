@@ -11,6 +11,7 @@
 * paste  
 * undo  
 * redo  
+* find word   
 * shift line up and down  
 
 
@@ -103,6 +104,19 @@ u
 ```
 ctl-r
 ```
+
+
+
+***
+
+
+
+## find word
+```
+/ [word]
+```
+to find word "word".  
+press `*` to go next and `#` to back.  
 
 
 
