@@ -116,7 +116,7 @@ ctl-r
 / [word]
 ```
 to find word "word".  
-press `*` to go next and `#` to back.  
+press `*` to go next, and `#` to go back.  
 
 
 
