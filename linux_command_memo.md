@@ -4,6 +4,8 @@
 
 ## titles
 
+* tar compression  
+* download from website  
 * open files  
 * apt  
 * groups  
@@ -14,6 +16,41 @@
 * make common directory  
 * portscan  
 
+
+
+
+***
+
+
+
+## tar compression
+to compress, type
+```
+tar cvf filename.tar filepath
+```
+to decompress, type  
+```
+tar xvf filepath
+```
+note that tar options can omit `-`
+
+
+
+***
+
+
+
+## download from website
+```
+curl [option] url
+```
+"url" doesn't need quotation.  
+use `-o` options to save as as file.  
+or you can use 
+```
+wget url
+```
+to download files from the website.  
 
 
 
@@ -145,7 +182,6 @@ nmap localhost
 
 
 ***
-
 
 
 
