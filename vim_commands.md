@@ -21,6 +21,9 @@
 * create new tab  
 * move through tabs  
 * show list of tabs  
+* change colorscheme  
+* location of colorscheme files  
+* place to find colorscheme files  
 
 
 
@@ -278,6 +281,44 @@ gT
 ```
 :ls
 ```
+
+
+
+***
+
+
+
+
+# About Vim
+
+
+## change colorscheme
+```
+:colorscheme [colorfiles]
+```
+search "location of colorscheme files" in this file.
+
+
+
+***
+
+
+
+## location of colorscheme files
+colorscheme files are in .vim format and are in
+```
+/usr/share/vim/vim81/colors
+```
+need `sudo` to edit.
+
+
+
+***
+
+
+
+## place to find colorscheme files
+find it at [VimColorScheme](https://www/softantenna.com/wp/webservice/vim-colors/)
 
 
 
