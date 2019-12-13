@@ -4,6 +4,7 @@
 ## titles
 
 * activate gdb  
+* compile in debuggable way  
 * stop gdb  
 * start a program  
 * execute shell command  
@@ -34,6 +35,18 @@ gdb filepath
 
 
 
+## compile in debuggable way
+compile with the availability of expanding macros are
+```
+gcc -g3 filename
+```
+
+
+
+***
+
+
+
 ## stop gdb
 ```
 (gdb) quit
@@ -53,6 +66,8 @@ to run with command argument,
 ```
 (gdb) run arg1 arg2 ...
 ```
+don't forget to make a breakpoint before running.  
+otherwise, it will just execute the whole script.  
 
 
 
