@@ -4,6 +4,7 @@
 
 ## titles
 
+* patch files  
 * gzip compression  
 * tar compression  
 * download from website  
@@ -18,6 +19,21 @@
 * portscan  
 
 
+
+
+***
+
+
+
+## patch files
+first, make a patch file by
+```
+diff -u beforef afterf > patchf
+```
+then, apply patch file by
+```
+patch -u applytof < patchf
+```
 
 
 ***

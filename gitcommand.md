@@ -14,8 +14,11 @@
 * pull  
 * status of local repository  
 * make branch  
+* make remote branch  
 * list of branch  
 * change branch  
+* delete remote branch  
+* delete local branch  
 
 
 
@@ -150,10 +153,30 @@ git branch name
 
 
 
+## make remote branch
+push the local branch "name" to remote by
+```
+git push -u origin name
+```
+
+
+
+***
+
+
+
 ## list of branch
-show a list of branch already exists
+show a list of local branch already exists
 ```
 git branch
+```
+show a list of remote branch by
+```
+git branch --remote
+```
+show all the remote and local branch by
+```
+git branch --all
 ```
 
 
@@ -173,4 +196,28 @@ git checkout name
 ***
 
 
- 
+
+## delete remote branch
+delete the remote branch "branch" by
+```
+git push --delete origin branch
+```
+
+
+
+***
+
+
+
+## delete local branch
+delete local branch "branch" by
+```
+git branch --delete branch
+```
+
+
+
+***
+
+
+
