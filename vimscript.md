@@ -27,6 +27,9 @@
 * function  
 * read/write file  
 * exception  
+* where to put code  
+* flow of original vimscript making  
+* command statement  
 
 
 
@@ -332,7 +335,11 @@ function! Sum(v1, v2)
 endfunction
 ```
 `!` is for overriding the function if already exists.  
-note that you need `a:` inside the function.
+note that you need `a:` inside the function.  
+if you want to use variable that's outside the function, type
+```
+g:var
+```
 
 
 
@@ -403,6 +410,23 @@ then, on the editor you want to execute, type
 after that, execute it by 
 ```
 :call FuncOfYourScript()
+```
+
+
+
+***
+
+
+
+## command statement
+state a new command "name" in vimscript by
+```
+command! Name call func()
+```
+
+state a command with arguments by
+```
+command! -nargs=1 Name call func(<f-args>)
 ```
 
 
