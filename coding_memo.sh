@@ -30,6 +30,7 @@ list_all_commands() {
 	echo "vim"
 	echo "gedit"
 	echo "vscode"
+	echo "vimscript"
 }
 
 
@@ -58,5 +59,6 @@ case $1 in
 	vim        ) cat ~/desktop/memos/vim_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	gedit      ) cat ~/desktop/memos/gedit_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;     
 	vscode     ) cat ~/desktop/memos/vscode_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
+	vimscript  ) cat ~/desktop/memos/vimscript.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";; 
 	*          ) echo -e "ERROR: wrong command!!!\ntype 'sc help' for more information";;
 esac

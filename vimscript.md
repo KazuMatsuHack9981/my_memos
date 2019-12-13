@@ -6,7 +6,7 @@
 * echo  
 * comment  
 * variable assignment/statement  
-* executing vim script  
+* execute vim script  
 * about operators  
 * about quote  
 * join string  
@@ -78,7 +78,7 @@ the variable.
 
 
 
-## executing vim script
+## execute vim script
 in edit mode
 ```
 :source filename.vim
@@ -371,6 +371,38 @@ catch
 finally
 	" task will always be done
 endtry
+```
+
+
+
+***
+
+
+
+## where to put code
+it can be anywhere but, put it in here
+```
+~/document/vimscripts/
+```
+
+
+
+***
+
+
+
+## flow of original vimscript making
+first, make a vimscript file in
+```
+~/document/vimscripts/
+```
+then, on the editor you want to execute, type
+```
+:source ~/document/vimscripts/~.vim
+```
+after that, execute it by 
+```
+:call FuncOfYourScript()
 ```
 
 
