@@ -4,6 +4,7 @@
 
 ## titles
 
+* gzip compression  
 * tar compression  
 * download from website  
 * open files  
@@ -16,6 +17,22 @@
 * make common directory  
 * portscan  
 
+
+
+
+***
+
+
+
+## gzip compression
+to compress to ".gz" file, 
+```
+gzip filename
+```
+to decompress add option as,
+```
+gzip -d filename
+```
 
 
 
