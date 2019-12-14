@@ -9,6 +9,7 @@ list_all_commands() {
 	echo ""
 	echo "filename selections for \$1 is listed below"
 	echo "help"
+	echo "edit"
 	echo "vsftpd"
 	echo "apache"
 	echo "docker"
@@ -39,6 +40,7 @@ list_all_commands() {
 
 case $1 in
 	help       ) list_all_commands;; 
+	edit       ) cd ~/desktop/memos; ls;;
 	vsftpd     ) cat ~/desktop/memos/about_vsftpd.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	apache     ) cat ~/desktop/memos/apache2_memo.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	docker     ) cat ~/desktop/memos/docker_commands.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
