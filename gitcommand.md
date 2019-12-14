@@ -6,6 +6,7 @@
 
 * make local repository  
 * make remote repository  
+* copy repostiory from remote  
 * list of remote repository  
 * add file  
 * commit  
@@ -52,6 +53,25 @@ after this, make sure to ,
 git add .
 git commit -m ""
 git push name master
+```
+
+
+
+***
+
+
+
+## copy repository from remote
+make copy of the remote repository "rem" to  
+the directory "dir" by
+```
+git clone rem dir
+```
+"rem" can be described as
+```
+url
+git:url
+ssh:url
 ```
 
 
