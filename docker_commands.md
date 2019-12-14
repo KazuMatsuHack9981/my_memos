@@ -41,6 +41,7 @@ docker images
 
 
 ## get docker images
+get docker images from the repository of docker hub by
 ```
 docker pull
 ```
@@ -66,7 +67,7 @@ to check whether it's running, type `sudo docker images`
 
 	
 ## status of container
-get status of the container which is you `docker run`  
+get status of the container which you `docker run`  
 add option `-a` to show container which is not running.  
 ```
 docker ps

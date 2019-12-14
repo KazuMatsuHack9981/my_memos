@@ -46,7 +46,13 @@ then you have to connect it with the local repostiory
 git remote add (name) (url)
 ```
 name is often origin  
-you can get the url from the GUI github where you made the remote repository
+you can get the url from the GUI github where you made the remote repository.
+after this, make sure to ,
+```
+git add .
+git commit -m ""
+git push name master
+```
 
 
 
@@ -214,6 +220,30 @@ delete local branch "branch" by
 ```
 git branch --delete branch
 ```
+
+
+
+***
+
+
+
+## merge branch
+merge other branch "other" to the current  
+(where HEAD indicates) branch by
+```
+git merge other
+```
+if two branch updated the same place in different way,   
+it will conflict. To avoid this, edit one branch by hand  
+or you can precede current branch by,
+```
+git checkout --ours filename
+```
+precede other branch by
+```
+git checkout --theirs filename
+```
+then, do add and commit at last and make merge commit.
 
 
 
