@@ -5,6 +5,7 @@
 ## titles
 
 * patch files  
+* show only designated line  
 * grep  
 * gzip compression  
 * tar compression  
@@ -35,6 +36,22 @@ then, apply patch file by
 ```
 patch -u applytof < patchf
 ```
+
+
+***
+
+
+
+## show only designated line
+to show only the line 10 of the "file"
+```
+sed -n 10p file
+```
+to show from line 10 to line 20
+```
+sed -n 10,20p file
+```
+
 
 
 ***
