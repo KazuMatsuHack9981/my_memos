@@ -5,6 +5,7 @@
 ## titles
 
 * patch files  
+* grep  
 * gzip compression  
 * tar compression  
 * download from website  
@@ -34,6 +35,19 @@ then, apply patch file by
 ```
 patch -u applytof < patchf
 ```
+
+
+***
+
+
+
+## grep 
+you can grep with the name of file that the keyword  
+was in by
+```
+cat * | grep -rin "keyword"
+```
+
 
 
 ***

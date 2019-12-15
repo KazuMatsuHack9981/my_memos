@@ -133,6 +133,8 @@ docker rmi IMAGEID -f
 
 
 
+
+
 # my own functions/alias
 the command listed below are the functions/alias  
 which I added to the ".bashrc"  
