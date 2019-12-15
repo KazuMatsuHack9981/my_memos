@@ -29,6 +29,7 @@
 * exception  
 * where to put code  
 * flow of original vimscript making  
+* back tab  
 * command statement  
 
 
@@ -410,6 +411,26 @@ then, on the editor you want to execute, type
 after that, execute it by 
 ```
 :call FuncOfYourScript()
+```
+
+
+
+***
+
+
+
+## back tab
+once you make a tab, it will keep the tab  
+because of the editor auto indent settings.  
+to make a "back" tab, make a **double** return  
+then, delete one return by adding **two** backspace.   
+```
+return 0;\n\n\b\b}
+```
+this will become
+```
+	return 0;
+}
 ```
 
 
