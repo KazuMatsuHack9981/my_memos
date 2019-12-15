@@ -5,6 +5,7 @@
 ## titles
 
 * patch files  
+* open file explorer   
 * show only designated line  
 * grep  
 * gzip compression  
@@ -36,6 +37,18 @@ then, apply patch file by
 ```
 patch -u applytof < patchf
 ```
+
+
+***
+
+
+
+## open file explorer
+open file explorer nautilus on current directory by
+```
+nautilus . &
+```
+
 
 
 ***
