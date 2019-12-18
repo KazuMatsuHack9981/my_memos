@@ -20,6 +20,7 @@
 * change branch  
 * delete remote branch  
 * delete local branch  
+* merge branch  
 
 
 
