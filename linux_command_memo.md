@@ -6,6 +6,7 @@
 
 * difference of files  
 * patch files  
+* find by name  
 * open file explorer   
 * time of running  
 * make fifo queue   
@@ -65,6 +66,29 @@ then, apply patch file by
 ```
 patch -u applytof < patchf
 ```
+
+
+***
+
+
+
+## find by name  
+find directory or file under "dir" that includes keyword "word" by  
+```
+find dir -name "*word*"
+```
+
+to seperate from the stderr output, make a file for  
+output and tail it by  
+```
+tail -f outputfile
+```
+than, redirect find command by  
+```
+find / -name "*word*" >> outputfile
+```
+using "/" doesn't take much time.  
+
 
 
 ***
