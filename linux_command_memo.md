@@ -6,6 +6,8 @@
 
 * patch files  
 * open file explorer   
+* time of running  
+* use for in command  
 * show only designated line  
 * grep  
 * gzip compression  
@@ -47,6 +49,30 @@ patch -u applytof < patchf
 open file explorer nautilus on current directory by
 ```
 nautilus . &
+```
+
+
+
+***
+
+
+
+## time of running
+you can execute the program and show the time it took by  
+```
+time ./a.out
+```
+
+
+
+***
+
+
+
+## use for in command
+```
+for i in `seq from to`; do command($i); done
+ex) for i in `seq 1 3`; do echo $i; done
 ```
 
 
