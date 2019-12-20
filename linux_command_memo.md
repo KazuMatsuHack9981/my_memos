@@ -4,9 +4,12 @@
 
 ## titles
 
+* difference of files  
 * patch files  
 * open file explorer   
 * time of running  
+* make fifo queue   
+* bash update  
 * use for in command  
 * show only designated line  
 * grep  
@@ -23,6 +26,29 @@
 * make common directory  
 * portscan  
 
+
+
+
+***
+
+
+
+## difference of files
+show difference per line by  
+```
+diff -u file1 file2
+```
+
+show difference of file2 from file1 per word by  
+```
+cdiff file1 file2
+```
+note that `cdiff` is an alias.  
+
+show difference per word showing two files by  
+```
+icdiff file1 file2
+```
 
 
 
@@ -61,6 +87,36 @@ nautilus . &
 you can execute the program and show the time it took by  
 ```
 time ./a.out
+```
+
+
+
+***
+
+
+
+## make fifo queue
+prepare 2 or 3 terminal.   
+on one terminal, make fifo queue "name" by  
+```
+mkfifo name
+```
+than, on other teminal(s), monitor queue "name" by  
+(this command return the doubled value of queue)  
+```
+tail -f name | awk '{print $1 * 2}'
+```
+
+
+
+***
+
+
+
+## bash update
+if you edit .bashrc, type below to reload  
+```
+source .bashrc
 ```
 
 
