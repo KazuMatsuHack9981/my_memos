@@ -4,9 +4,9 @@
 
 ## titles
 
-* 
-* 
-* 
+* validation format  
+* check the validation  
+* validation rules  
 
 
 
@@ -55,7 +55,24 @@ for the validation, "rule" are such as,
 ```
 presence     : require input forcely
 numericality : input of number
+numericality : { setting:value }
+settings:
+	only_integer
+	greater_than
+	greater_than_or_equal_to
+	less_than
+	less_than_or_equal_to
+	equal_to
+	even
+	odd
 uniqueness   : check if the same value doesn't exist
+length       : {setting:value}
+settings:
+	maximum
+	minimum
+	is (have to be exactly that length)
+	within (use A..B to determine range of word length)
+	tokenizer
 ```
 
 
