@@ -6,9 +6,12 @@
 
 * settings  
 * shortcuts  
-* Alt+Esc  
-* Windows+I  
-* Windows+Esc  
+* launch application  
+* system panel  
+* list of current windows  
+* delete window  
+* move window to center  
+* maximize/minimize window  
 
 
 
