@@ -56,7 +56,7 @@ for the validation, "rule" are such as,
 presence     : require input forcely
 numericality : input of number
 numericality : { setting:value }
-settings:
+-settings:
 	only_integer
 	greater_than
 	greater_than_or_equal_to
@@ -67,12 +67,13 @@ settings:
 	odd
 uniqueness   : check if the same value doesn't exist
 length       : {setting:value}
-settings:
+-settings:
 	maximum
 	minimum
 	is (have to be exactly that length)
 	within (use A..B to determine range of word length)
 	tokenizer
+message      : change error messages value
 ```
 
 
