@@ -36,7 +36,10 @@ the way to change the keyboard binding of linux
 
 ## shortcuts
 
-### Alt+Esc
+### launch application 
+```
+Alt+Esc
+```
 show all application and run  
 like a cortana on windows  
 
@@ -46,7 +49,10 @@ like a cortana on windows
 
 
 
-### Windows+I
+### system panel
+```
+Windows+I
+```
 open system panel  
 
 
@@ -55,8 +61,48 @@ open system panel
 
 
 
-### Windows+Esc
+### list of current windows
+```
+Windows+Esc
+```
 show a list of window
+
+
+
+***
+
+
+
+### delete window
+```
+Alt+delete
+```
+to delete current focused window
+
+
+
+***
+
+
+
+### move window to center
+```
+Alt+m
+```
+
+
+
+***
+
+
+
+### maximize/minimize window
+press either
+```
+Windows+up
+Windows+down
+```
+to toggle maximization of window
 
 
 
