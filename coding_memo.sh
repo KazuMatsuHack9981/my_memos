@@ -34,6 +34,7 @@ list_all_commands() {
 	echo "vimscript"
 	echo "gdb"
 	echo "findrails"
+	echo "validation"
 }
 
 
@@ -66,5 +67,6 @@ case $1 in
 	vimscript  ) cat ~/desktop/memos/vimscript.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";; 
 	gdb        ) cat ~/desktop/memos/gdb_about.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	findrails  ) cat ~/desktop/memos/find_rails.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
+	validation ) cat ~/desktop/memos/validation_rails.md | awk "/$2/,/\*\*\*/" | sed -r "s/($2)/\x1b[38;5;82m\1\x1b[0m/g";;
 	*          ) echo -e "ERROR: wrong command!!!\ntype 'sc help' for more information";;
 esac
