@@ -168,6 +168,7 @@ label the container id and run by
 ```
 docker run --name label image
 ```
+labels are shown in "NAMES" when `docker ps`
 
 
 ### run and go inside container
