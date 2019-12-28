@@ -658,7 +658,7 @@ repository will be made when you push the image.
 ## push image to docker hub
 first, login to docker and tag the image you want to push
 ```
-docker tag username/repositoryname:tag
+docker tag id username/repositoryname:tag
 ```
 note that tags are mostly "latest".  
 
