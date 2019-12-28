@@ -42,7 +42,17 @@ else
 	render "view"
 ```
 note that in the "view", the name of the current  
-view will be written.
+view will be written.  
+to make the error message more informative, write on the "view" view.html.erb,
+```
+<% if @person.errors.any? %>
+<ul>
+	<% @model.errors.full_messages.each do |err| %>
+		<li><%= end %></li>
+	<% end %>
+</ul>
+<% end %>
+```
 
 
 
@@ -77,6 +87,28 @@ message      : change error messages value
 ```
 
 
+
+
+
+***
+
+
+
+## make your own validation
+in the "models/" folder, make "name" validator
+```
+name_validator.rb
+```
+the template of the validator is
+```
+class NameValidator < ActiceModel;;EachValidator
+	def validate_each(record, attribute, value)
+		unless value =~ ...
+		end
+	end
+end
+```
+note that the place to change on template is only "Name"  
 
 
 
