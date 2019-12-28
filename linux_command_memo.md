@@ -11,6 +11,10 @@
 * time of running  
 * make fifo queue   
 * bash update  
+* remove jobs  
+* null device  
+* redirect  
+* remove stdout/stderr/stdin of process  
 * use for in command  
 * show only designated line  
 * grep  
@@ -141,6 +145,70 @@ tail -f name | awk '{print $1 * 2}'
 if you edit .bashrc, type below to reload  
 ```
 source .bashrc
+```
+
+
+
+***
+
+
+
+## remove jobs
+remove current job from the shell's job table by 
+```
+disown 
+```
+options are
+```
+-a : delete all jobs
+-r : only running jobs
+```
+by doing this, for example even if you launched gedit  
+as the background process and deleted the shell, gedit  
+will also closed. However, doing this, gedit will last.
+note that, sterr/stdout will still be shown.  
+
+
+
+***
+
+
+
+## null device
+```
+/dev/null
+```
+is a special file(device file) which fill delete everything written in  
+this directory.  
+
+
+
+***
+
+
+
+## redirect
+```
+ >    : redirect stdout (overwrite)
+ >>   : redirect stdout (add)
+ 2>   : redirect stderr (overwrite)
+ 2>>  : redirect stderr (add)
+```
+you can redirect both stdout and stderr by
+```
+command > file 2>&1
+```
+
+
+
+***
+
+
+
+## remove stdout/stderr/stdin of process
+use redirect toward null device by
+```
+command > /dev/null 2>&1 < /dev/null &
 ```
 
 
