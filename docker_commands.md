@@ -20,6 +20,7 @@
 		* run container only once
 		* run container giving env variable
 	* restart container
+	* rename and put tag  
 	* use systemctl inside container (loop)
 	* use command outside the container
 	* make docker image (from existing container)
@@ -49,6 +50,10 @@
 	* sudo docker images -aq | xargs sudo docker rmi
 	* dockerbash
 	* docker-services
+* Docker Hub
+	* login/logout to docker hub
+	* make remote repository
+	* push image to docker hub
 
 
 
@@ -206,6 +211,18 @@ docker run -d --env MYSQL_ROOT_PASSWORD=passwd mysql:5.7
 restart the container which has the id "id"
 ```
 docker restart id
+```
+
+
+
+***
+
+
+
+## rename or put tag
+change the name of the repository and tag by
+```
+docker tag id REPOSITORY:TAG
 ```
 
 
@@ -599,6 +616,55 @@ can go out by typing `exit`
 show the current status of docker-services.  
 ```
 sudo systemctl list-unit-files | grep docker
+```
+
+
+
+
+
+
+***
+***
+
+
+
+
+
+# Docker Hub
+
+
+
+## login/logout to docker hub
+```
+docker login
+docker logout
+```
+
+
+
+***
+
+
+
+## make remote repository
+repository will be made when you push the image.  
+
+
+
+***
+
+
+
+## push image to docker hub
+first, login to docker and tag the image you want to push
+```
+docker tag username/repositoryname:tag
+```
+note that tags are mostly "latest".  
+
+then, push it by
+```
+docker push username/repositoryname:tag
 ```
 
 
