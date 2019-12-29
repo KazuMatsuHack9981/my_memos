@@ -559,8 +559,7 @@ which I added to the ".bashrc"
 command included in this function `dockerstats` are listed below.
 ```
 docker images
-docker ps
-docker-compose ps
+docker ps -a
 ```
 `sudo` is added to each command.
 	
