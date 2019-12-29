@@ -19,6 +19,7 @@
 		* run as daemon process
 		* run container only once
 		* run container giving env variable
+		* run overwriting entrypoint
 	* restart container
 	* rename and put tag  
 	* use systemctl inside container (loop)
@@ -200,6 +201,13 @@ some containers requires environment variable when activating.
 for example, "mysql" needs ROOT PASSWORD when activating.  
 ```
 docker run -d --env MYSQL_ROOT_PASSWORD=passwd mysql:5.7
+```
+
+
+### run overwriting entrypoint
+to run container with overwriting the entrypoint,
+```
+docker run --entrypoint "bash" image
 ```
 
 
