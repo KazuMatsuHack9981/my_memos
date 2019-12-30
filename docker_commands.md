@@ -775,20 +775,20 @@ such as bundle install.
 After that, **delete everything that's written in database.yml** and write
 ```
 default: &default
-adapter: mysql2
-encoding: utf8
-pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-username: root
-password: password # docker-compose.ymlのMYSQL_ROOT_PASSWORD
-host: db # docker-compose.ymlのservice名
+   adapter: mysql2
+   encoding: utf8
+   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+   username: root
+   password: password # docker-compose.ymlのMYSQL_ROOT_PASSWORD
+   host: db # docker-compose.ymlのservice名
 
 development:
-<<: *default
-database: myapp_development
+   <<: *default
+   database: myapp_development
 
 test:
-<<: *default
-database: myapp_test
+   <<: *default
+   database: myapp_test
 ```
 in them.  
 note that this is a bit different from [this article](https://qiita.com/azul915/items/5b7063cbc80192343fc0)
