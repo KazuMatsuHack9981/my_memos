@@ -629,14 +629,34 @@ sudo docker images -aq | xargs sudo docker rmi
 	
 	
 ## dockerbash
-alias to enter the bash in the container.  
+function to enter the bash in the container.  
 ```
-docker exec -it コンテナ名 bash
+docker exec -it $1 bash
+```
+use this by 
+```
+dockerbash container_id_or_name
 ```
 can go out by typing `exit`  
 	
 	
 	
+***
+
+
+
+## dockertest
+function to make a test container by
+```
+sudo docker run -it --name test --entrypoint bash $1
+```
+use this by
+```
+dockertest image:tag
+```
+
+
+
 ***
 
 
