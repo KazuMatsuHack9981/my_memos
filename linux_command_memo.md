@@ -21,6 +21,7 @@
 * gzip compression  
 * tar compression  
 * download from website  
+* using api 
 * open files  
 * apt  
 * groups  
@@ -302,6 +303,31 @@ or you can use
 wget url
 ```
 to download files from the website.  
+
+
+
+***
+
+
+
+## using api
+you can use `curl` command to use api.  
+Also, you can install `jq` command to format json file  
+which will be returned.  
+
+
+### show http header
+```
+curl -I URL
+```
+you can use `-i` to also show the feedback of api.  
+use `-v` to also show the request's header.  
+
+
+### post
+```
+curl -X POST URL -d "parameter=value"
+```
 
 
 
