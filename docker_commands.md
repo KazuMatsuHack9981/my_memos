@@ -57,6 +57,7 @@
 	* make remote repository
 	* push image to docker hub
 * Making Container From Existing Image
+* Add Colors and Vim to Container
 
 
 
@@ -794,6 +795,40 @@ If you want to make an database, then do
 ```
 docker-compose run web rails db:create
 ```
+
+
+
+
+
+
+***
+***
+
+
+
+
+
+## Add Colors and Vim to Container
+There are "~/container/customfile" to edit bashrc, vimrc,  
+colorscheme for vim, vimscript for templates of html.  
+
+Once you made the container, copy this to that container by
+```
+docker cp customfile container_id:/app_name
+```
+
+Then, get into the container, and got to the customfile directory.  
+Give execution authority to "rename.sh" by  
+```
+chmod +x rename.sh
+```
+
+Then, execute it by  
+```
+./rename.sh
+```
+
+Done.
 
 
 
