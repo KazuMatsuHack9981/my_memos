@@ -31,6 +31,7 @@
 	* delete docker image
 	* port mapping
 	* volume mapping (mount)
+	* copy files between container
 * Dockerfile
 	* About Dockerfile
 	* EXPOSE
@@ -45,7 +46,7 @@
 	* stop docker compose
 	* get into the container by docker compose
 * my own functions/alias
-	* dockerstats
+	* ds
 	* resetdocker
 	* sudo docker rm -f $(sudo docker ps -a -q)
 	* sudo docker images -aq | xargs sudo docker rmi
@@ -55,6 +56,7 @@
 	* login/logout to docker hub
 	* make remote repository
 	* push image to docker hub
+* Making Container From Existing Image
 
 
 
@@ -360,6 +362,24 @@ docker run -d -v [host directory abs path]:[container abs path] image command
 
 
 
+***
+
+
+
+## copy files between container 
+
+### CONTAINER ==> HOST
+```
+docker cp [container_id]:[container_path] [host_path]
+```
+
+### HOST ==> CONTAINER
+```
+docker cp [host_path] [container_id]:[container_path]
+```
+
+
+
 
 
 ***
@@ -555,8 +575,8 @@ which I added to the ".bashrc"
 	
 	
 	
-## dockerstats
-command included in this function `dockerstats` are listed below.
+## ds
+command included in this function `ds` are listed below.
 ```
 docker images
 docker ps -a
@@ -673,6 +693,106 @@ note that tags are mostly "latest".
 then, push it by
 ```
 docker push username/repositoryname:tag
+```
+
+
+
+
+
+
+***
+***
+
+
+
+
+
+# Making Container From Existing Image
+
+## 1. Make Directory of App
+First, make a directory of the app you want to make a container and  
+use `cd` to move in.  Remember to make sure that no container's status  
+is up.
+
+
+## 2. Copy docker-compose.yml from other container
+Remember to add `sudo`.
+
+
+## 3. Create Gemfile/Gemfile.lock
+First, make **empty** file "Gemfile.lock" by
+```
+touch Gemfile.lock
+```
+Then, make "Gemfile" too and write
+```
+source 'https://rubygems.org'
+gem 'rails', '5.2.2'
+```
+in the "Gemfile".
+
+
+
+## 4. Edit docker-compose.yml
+Now, edit "docker-compose.yml". In the source code  
+where it says "web:", you don't have to build new container so  
+if there were `build .`, delete it and add `image: imagename`.  
+Make sure that "imagename" should be the name of the image you want to  
+use.
+
+
+## 5. Rails new
+Then, don't forget to do
+```
+docker-compose run web rails new . --force --database=mysql --skip-bundle
+```
+note that you **DON'T** have to get into the container and type command  
+such as bundle install.  
+
+
+## 6. Edit database.yml
+After that, **delete everything that's written in database.yml** and write
+```
+default: &default
+adapter: mysql2
+encoding: utf8
+pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+username: root
+password: password # docker-compose.ymlのMYSQL_ROOT_PASSWORD
+host: db # docker-compose.ymlのservice名
+
+development:
+<<: *default
+database: myapp_development
+
+test:
+<<: *default
+database: myapp_test
+```
+in them.  
+note that this is a bit different from [this article](https://qiita.com/azul915/items/5b7063cbc80192343fc0)
+
+
+## 7. Activate Docker
+Finally, go to the directory you made in "1." and type
+```
+docker-compose build
+```
+this may not be necessary but if you do this, the stdout will   
+be something like "it already exists so skipped".  
+
+Then, do
+```
+docker-compose up
+```
+and if both the web and db are up, it is your victory!
+
+
+
+## 8. Create DB
+If you want to make an database, then do
+```
+docker-compose run web rails db:create
 ```
 
 
