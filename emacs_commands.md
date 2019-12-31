@@ -14,6 +14,7 @@
 * on/off toggle line number  
 * save files  
 * quit command   
+* replace word  
 * search word  
 * jump to arbitrary line  
 * close emacs  
@@ -155,6 +156,26 @@ Ctl-s [Enter word]
 ```
 press `Ctl-g` to finish
 
+
+
+
+***
+
+
+
+## replace word
+first, move the cursor to at least the head of the word you  
+want to replace and replace each word "[before]" to "[after]" by
+```
+Alt-% [before] [Enter]
+[after] [Enter]
+y
+```
+this will keep searching word below cursor and asks  
+if the word need replace.  
+
+to replace all word below the cursor, type
+**`!` instead of `y`.**
 
 
 
