@@ -11,8 +11,12 @@
  * redo  
  * move cursor to the next word  
  * jump to arbitrary line number  
+ * replace word
  * save  
  * paste all content of other files  
+ * toggle comment
+ * multi-buffer mode
+ * show help
  * close nano  
 
 
@@ -55,7 +59,7 @@ only the selected part.
 ## paste
 ```
 Ctl-u
-``` 
+```
 
 
 
@@ -126,6 +130,27 @@ Ctl-_ [line number]
 
 
 
+## replace word
+search and replace word by
+```
+Ctl-\ [before]
+[after]
+```
+keep pressing y to keep replacing.  
+
+if you want to replace all not considering  
+the current cursor postion, press
+```
+a
+```
+instead of pressing `y`.
+
+
+
+***
+
+
+
 ## save
 ```
 Ctl-o
@@ -140,6 +165,46 @@ Ctl-o
 ## paste all content of other files
 ```
 Ctl-r [filename]
+```
+
+
+
+***
+
+
+
+## toggle comment
+toggle comment and comment out by
+```
+Alt-3
+```
+
+
+
+***
+
+
+
+## multi-buffer mode
+open multiple files by multi-buffer mode by
+```
+nano -F file1 file2 ...
+```
+move through buffer(files) by
+```
+Alt->
+Alt-<
+```
+
+
+
+***
+
+
+
+## show help
+```
+Ctl-g
 ```
 
 

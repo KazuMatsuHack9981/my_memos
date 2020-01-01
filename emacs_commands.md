@@ -17,6 +17,13 @@
 * replace word  
 * search word  
 * jump to arbitrary line  
+* split window  
+* open new file  
+* move between window
+* delete the window
+* use bash command
+* affect commands to selected lines
+* auto close bracket  
 * close emacs  
 
 
@@ -188,6 +195,94 @@ to replace all word below the cursor, type
 Alt-g g [Enter line number]
 ```
 
+
+
+***
+
+
+
+## split window  
+split to right and left by
+```
+Ctl-x 3
+```
+
+split to up and down by
+```
+Ctl-x 2
+```
+
+
+
+***
+
+
+
+## open new file
+```
+Ctl-x Ctl-f
+```
+then select file you want to open.
+
+
+
+***
+
+
+
+## move between window
+```
+Ctl+x o
+```
+
+
+
+***
+
+
+
+## delete the window
+```
+Ctl+x 0
+```
+
+
+
+***
+
+
+
+## use bash command
+```
+Alt+!
+```
+
+
+
+***
+
+
+
+## affect commands to selected lines
+if you input 3 for [num] at the command below,  
+you can affect [command] to the line where cursor is at  
+current to 3 lines below.  
+```
+Ctl-u [num] [command]
+```
+
+
+
+***
+
+
+
+## auto close bracket  
+toggle the auto bracket by
+```
+Alt-x electric-pair-mode
+```
+even Japanese bracket will be paired.
 
 
 ***

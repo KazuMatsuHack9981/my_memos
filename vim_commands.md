@@ -5,6 +5,7 @@
 
 * cut (one word)  
 * cut (line)  
+* delete lines that includes keyword
 * copy (one word)  
 * copy (one line)  
 * select (visual mode)  
@@ -12,7 +13,7 @@
 * undo  
 * redo  
 * find word   
-* shift line up and down  
+* shift line  
 * go back to shell  
 * replace word  
 * comment (multiple lines)  
@@ -21,6 +22,10 @@
 * create new tab  
 * move through tabs  
 * show list of tabs  
+* split window
+* move through windows
+* auto close bracket  
+* use bash command
 * change colorscheme  
 * location of colorscheme files  
 * place to find colorscheme files  
@@ -48,6 +53,18 @@ dw
 dd
 ```
 or you can `3dd` to cut 3 lines below.
+
+
+
+***
+
+
+
+## delete lines that includes keyword
+delete all the line that includes "keyword" by
+```
+g/keyword/d
+```
 
 
 
@@ -135,7 +152,7 @@ press `*` to go next, and `#` to go back.
 
 
 
-## shift line up and down
+## shift line
 shift line down and up once by
 ```
 :m+
@@ -149,6 +166,11 @@ it is able to shift line down 3 lines by
 while it shifts 3 lines up by
 ```
 :m-4
+```
+
+shift line just before arbitrary line number "num"
+```
+:m [num]
 ```
 
 
@@ -280,6 +302,66 @@ gT
 ## show list of tabs
 ```
 :ls
+```
+
+
+
+***
+
+
+
+## split window
+to split window to left and right,
+```
+:vsplit
+```
+to split up and down
+```
+:split
+```
+
+
+
+***
+
+
+
+## move through windows
+move through windows by using the arrow key in
+**insert mode*** like
+```
+Ctl-w [arrow]
+```
+
+
+
+***
+
+
+
+## auto close bracket  
+```
+inoremap { {}<LEFT>
+```
+by doing this, if you entered "{",  
+"{}<LEFT>" will automatically printed.  
+"<LEFT>" means to move cursur left.
+
+
+
+***
+
+
+
+## use bash commands
+use bash commands by
+```
+:![command]
+```
+also, print stdout of the bash command to the  
+current cursor postion by
+```
+:r![command]
 ```
 
 

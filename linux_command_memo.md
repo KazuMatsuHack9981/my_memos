@@ -31,6 +31,7 @@
 * show user status  
 * make common directory  
 * portscan  
+* calender  
 
 
 
@@ -454,6 +455,18 @@ chmod -R 770 directory : ↑の次にこれをやる。
 portscan your own local computer
 ```
 nmap localhost
+```
+
+
+
+***
+
+
+
+## calender
+show calender by
+```
+cal
 ```
 
 

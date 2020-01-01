@@ -13,8 +13,11 @@
 * find word  
 * replace word  
 * convert upper/lower case  
+* open file
+* jump to nth tab
+* toggle side bars
+* show help
 * save  
-
 
 
 
@@ -145,6 +148,55 @@ Ctl-u
 or you can Lower it by
 ```
 Ctl-l
+```
+
+
+
+***
+
+
+
+## open file
+open file in two different way
+```
+Ctl-o
+Alt-o
+```
+and select the file you want to open.
+
+
+
+***
+
+
+
+## jump to nth tab
+jump to tab number n by
+```
+Alt n
+```
+note that the first tab starts from "1".
+
+
+
+***
+
+
+
+## toggle side bars
+```
+F9
+```
+
+
+
+***
+
+
+
+## show help
+```
+F1
 ```
 
 

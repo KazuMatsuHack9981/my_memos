@@ -12,7 +12,12 @@
 * jump to arbitrary line  
 * move to arbitrary symbol  
 * multiple cursor  
+* rename variable
+* check the statement of variable
 * move tabs  
+* open file
+* open sidebar
+* open terminal
 * change keyboard bindings  
 
 
@@ -90,6 +95,11 @@ Ctl-f
 ```
 move next by `[Enter]`, and move back by `shift Enter`
 
+also you can find in more high-spec way by
+```
+Ctl-shift-o
+```
+
 
 
 ***
@@ -139,6 +149,31 @@ Ctl-shift-l
 
 
 
+## rename variable
+bring cursor to the variable you want to edit name and
+```
+F2
+```
+to edit all that variable name
+
+
+
+***
+
+
+
+## check the statement of variable
+use mouse and "hover" like
+```
+Ctl-[HOVER_MOUSE]
+```
+
+
+
+***
+
+
+
 ## move tabs
 go to the right/left tabs by
 ```
@@ -148,6 +183,42 @@ Ctl-shift-tab
 also, move to tab entering filenames by
 ```
 Ctl-p [filename]
+```
+
+
+
+***
+
+
+
+## open file
+open file as a new tab by
+```
+Ctl-o
+```
+
+
+
+***
+
+
+
+## open sidebar
+toggle sidebar by
+```
+Ctl-b
+```
+
+
+
+***
+
+
+
+## open terminal
+toggle terminal by
+```
+Ctl-j
 ```
 
 
