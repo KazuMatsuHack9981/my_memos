@@ -242,6 +242,11 @@ delete local branch "branch" by
 git branch --delete branch
 ```
 
+to delete the branch forcely,
+```
+git branch -D branch
+```
+
 
 
 ***
