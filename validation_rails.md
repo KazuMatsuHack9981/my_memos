@@ -101,7 +101,7 @@ name_validator.rb
 ```
 the template of the validator is
 ```
-class NameValidator < ActiceModel;;EachValidator
+class NameValidator < ActiveModel;;EachValidator
 	def validate_each(record, attribute, value)
 		unless value =~ ...
 		end
