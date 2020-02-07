@@ -57,7 +57,7 @@ note that push means to put the object into the head of array.
 search data not only with id but the name of each column.  
 for example, if "Model" has the column "title" and one data has  
 the title "book", you can find this data by,
-```@
+```
 @models = Array.new
 @models = Model.where title: "book"
 ```
