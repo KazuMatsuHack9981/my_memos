@@ -22,6 +22,7 @@
 		* run overwriting entrypoint
 	* restart container
 	* rename and put tag  
+	* rename container
 	* use systemctl inside container (loop)
 	* use command outside the container
 	* make docker image (from existing container)
@@ -235,6 +236,17 @@ docker restart id
 change the name of the repository and tag by
 ```
 docker tag id REPOSITORY:TAG
+```
+
+
+
+***
+
+
+
+## rename container
+```
+d rename [oldname] [newname]
 ```
 
 
